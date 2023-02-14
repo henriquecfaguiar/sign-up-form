@@ -3,5 +3,25 @@
 @tailwind utilities;
 
 .input {
-  @apply rounded-md border-2 p-1 focus-visible:border-2 focus-visible:border-rose-100 focus-visible:outline-none;
+  @apply rounded-md border-2 p-1 focus-visible:border-2 focus-visible:border-rose-200 focus-visible:outline-none;
+}
+
+.bg-image {
+  background-image: url("../images/bg-image-transparent.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (screen(md)) {
+  .bg-image {
+    background-image: none;
+  }
+}
+
+.main-image {
+  background-image: url("../images/bg-image.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

@@ -20,34 +20,62 @@
     >
       <!-- Content Container -->
       <div
-        class="mx-2 flex max-w-5xl flex-col rounded-md bg-gray-50 shadow-md md:flex-row"
+        class="mx-2 flex max-w-6xl flex-col rounded-md bg-gray-50 shadow-md md:flex-row"
       >
         <!-- Left Side -->
-        <img
+        <div class="main-image relative hidden w-3/4 md:block">
+          <div
+            class="mt-40 flex items-center justify-center space-x-2 bg-black/[0.5] py-2"
+          >
+            <img src="./images/odin-lined.png" alt="" class="w-16" />
+            <p class="text-5xl text-white">Odin</p>
+          </div>
+          <p
+            class="absolute inset-x-0 bottom-0 bg-black/[0.2] text-center text-xs font-semibold text-white"
+          >
+            Photo by
+            <a
+              href="https://unsplash.com/@kim_vlad"
+              class="underline duration-200 hover:text-rose-200"
+              >Vladislav Kim</a
+            >
+            on
+            <a
+              href="https://unsplash.com/photos/fQOVfduJekc"
+              class="underline duration-200 hover:text-rose-200"
+              >Unsplash</a
+            >
+          </p>
+        </div>
+        <!-- <img
           src="./images/bg-image.jpg"
           alt=""
-          class="hidden rounded-l-md md:block md:w-[300px] lg:w-[430px]"
-        />
+          class="hidden rounded-l-md shadow-md md:block md:w-[300px] lg:w-[430px]"
+        /> -->
         <!-- Right Side -->
-        <div class="flex flex-col">
+        <div class="flex flex-col pb-6 md:py-24">
           <!-- Main Text Container -->
-          <div
-            class="flex flex-col py-10 text-center text-lg md:pl-8 md:text-left md:text-xl"
-          >
-            <h1 class="mb-6">
+          <div class="bg-image">
+            <h1
+              class="mb-6 text-center text-lg md:ml-6 md:text-left md:text-xl"
+            >
               This is not a real online service! You know you need something
               like this in your life to help your deepest dreams. Sign up
               <em>now</em> to get started.
             </h1>
-            <p>You <em>know</em> you want to.</p>
+            <p class="mb-8 text-center text-lg md:ml-6 md:text-left md:text-xl">
+              You <em>know</em> you want to.
+            </p>
           </div>
           <!-- Form Container -->
           <form
-            class="flex flex-col items-center space-y-4 bg-white py-4 shadow-lg md:items-start md:pl-8"
+            class="flex flex-col items-center space-y-4 bg-white py-4 shadow-lg md:items-start md:pl-6"
           >
             <h2 class="text-lg md:text-xl">Let's do this!</h2>
             <!-- Name Container -->
-            <div class="flex space-x-14">
+            <div
+              class="flex flex-col space-y-2 md:flex-row md:space-x-14 md:space-y-0"
+            >
               <!-- First Name -->
               <div class="flex flex-col">
                 <label
@@ -68,7 +96,9 @@
               </div>
             </div>
             <!-- Email Phone Container -->
-            <div class="flex space-x-14">
+            <div
+              class="flex flex-col space-y-2 md:flex-row md:space-x-14 md:space-y-0"
+            >
               <!-- Email -->
               <div class="flex flex-col">
                 <label
@@ -89,7 +119,9 @@
               </div>
             </div>
             <!-- Password Container -->
-            <div class="flex space-x-14">
+            <div
+              class="flex flex-col space-y-2 md:flex-row md:space-x-14 md:space-y-0"
+            >
               <!-- Password -->
               <div class="flex flex-col">
                 <label
@@ -111,6 +143,19 @@
             </div>
           </form>
           <!-- Bottom Container -->
+          <div class="mt-6 flex flex-col space-y-2 md:ml-6">
+            <a
+              href="#"
+              class="mx-auto w-fit rounded-md border-2 border-rose-300 bg-rose-300 px-10 py-2 text-white shadow-md duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-rose-300 md:mx-0"
+              >Create Account</a
+            >
+            <p class="text-center md:text-left">
+              Already have an account?
+              <a href="#" class="text-rose-300 duration-200 hover:opacity-50"
+                >Log In</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </div>
