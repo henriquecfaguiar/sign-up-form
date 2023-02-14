@@ -13,5 +13,106 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Sign-Up Form</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Global Container -->
+    <div
+      class="mx-auto flex min-h-screen items-center justify-center bg-rose-50"
+    >
+      <!-- Content Container -->
+      <div
+        class="mx-2 flex max-w-5xl flex-col rounded-md bg-gray-50 shadow-md md:flex-row"
+      >
+        <!-- Left Side -->
+        <img
+          src="./images/bg-image.jpg"
+          alt=""
+          class="hidden rounded-l-md md:block md:w-[300px] lg:w-[430px]"
+        />
+        <!-- Right Side -->
+        <div class="flex flex-col">
+          <!-- Main Text Container -->
+          <div
+            class="flex flex-col py-10 text-center text-lg md:pl-8 md:text-left md:text-xl"
+          >
+            <h1 class="mb-6">
+              This is not a real online service! You know you need something
+              like this in your life to help your deepest dreams. Sign up
+              <em>now</em> to get started.
+            </h1>
+            <p>You <em>know</em> you want to.</p>
+          </div>
+          <!-- Form Container -->
+          <form
+            class="flex flex-col items-center space-y-4 bg-white py-4 shadow-lg md:items-start md:pl-8"
+          >
+            <h2 class="text-lg md:text-xl">Let's do this!</h2>
+            <!-- Name Container -->
+            <div class="flex space-x-14">
+              <!-- First Name -->
+              <div class="flex flex-col">
+                <label
+                  for="first_name"
+                  class="text-xs uppercase tracking-widest text-gray-700"
+                  >First Name</label
+                >
+                <input type="text" id="first_name" class="input" />
+              </div>
+              <!-- Last Name -->
+              <div class="flex flex-col">
+                <label
+                  for="last_name"
+                  class="text-xs uppercase tracking-widest text-gray-700"
+                  >Last Name</label
+                >
+                <input type="text" id="last_name" class="input" />
+              </div>
+            </div>
+            <!-- Email Phone Container -->
+            <div class="flex space-x-14">
+              <!-- Email -->
+              <div class="flex flex-col">
+                <label
+                  for="email"
+                  class="text-xs uppercase tracking-widest text-gray-700"
+                  >Email</label
+                >
+                <input type="email" id="email" class="input" />
+              </div>
+              <!-- Phone Name -->
+              <div class="flex flex-col">
+                <label
+                  for="phone_number"
+                  class="text-xs uppercase tracking-widest text-gray-700"
+                  >Phone Number</label
+                >
+                <input type="text" id="phone_number" class="input" />
+              </div>
+            </div>
+            <!-- Password Container -->
+            <div class="flex space-x-14">
+              <!-- Password -->
+              <div class="flex flex-col">
+                <label
+                  for="password"
+                  class="text-xs uppercase tracking-widest text-gray-700"
+                  >Password</label
+                >
+                <input type="password" id="password" class="input" />
+              </div>
+              <!-- Confirm Password -->
+              <div class="flex flex-col">
+                <label
+                  for="confirm_password"
+                  class="text-xs uppercase tracking-widest text-gray-700"
+                  >Confirm Password</label
+                >
+                <input type="password" id="confirm_password" class="input" />
+              </div>
+            </div>
+          </form>
+          <!-- Bottom Container -->
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

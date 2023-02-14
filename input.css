@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.input {
+  @apply rounded-md border-2 p-1 focus-visible:border-2 focus-visible:border-rose-100 focus-visible:outline-none;
+}
