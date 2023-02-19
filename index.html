@@ -7,14 +7,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      rel="shortcut icon"
+      href="./images/input-favicon.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/script.js" defer></script>
     <title>Sign-Up Form</title>
   </head>
   <body>
@@ -24,11 +30,11 @@
     >
       <!-- Content Container -->
       <div
-        class="mx-2 flex max-w-6xl flex-col rounded-md bg-gray-50 shadow-md md:flex-row"
+        class="mx-2 flex max-w-6xl flex-col rounded-md bg-gray-50 shadow-md lg:flex-row"
       >
         <!-- Left Side -->
         <div
-          class="main-image relative hidden w-3/4 rounded-l-md shadow-md md:block"
+          class="main-image relative hidden w-3/4 rounded-l-md shadow-md lg:block"
         >
           <div
             class="mt-40 flex items-center justify-center space-x-2 bg-black/[0.5] py-2"
@@ -54,28 +60,28 @@
           </p>
         </div>
         <!-- Right Side -->
-        <div class="flex flex-col pb-6 md:py-24">
+        <div class="flex flex-col pb-6 lg:py-24">
           <!-- Main Text Container -->
           <div class="bg-image">
             <h1
-              class="mb-6 text-center text-lg md:ml-6 md:text-left md:text-xl"
+              class="mb-6 text-center text-lg lg:ml-6 lg:text-left lg:text-xl"
             >
               This is not a real online service! You know you need something
               like this in your life to help your deepest dreams. Sign up
               <em>now</em> to get started.
             </h1>
-            <p class="mb-8 text-center text-lg md:ml-6 md:text-left md:text-xl">
+            <p class="mb-8 text-center text-lg lg:ml-6 lg:text-left lg:text-xl">
               You <em>know</em> you want to.
             </p>
           </div>
           <!-- Form Container -->
           <form
-            class="flex flex-col items-center space-y-4 bg-white py-4 shadow-lg md:items-start md:pl-6"
+            class="flex flex-col items-center space-y-4 bg-white py-4 shadow-lg lg:items-start lg:pl-6"
           >
-            <h2 class="text-lg md:text-xl">Let's do this!</h2>
+            <h2 class="text-lg lg:text-xl">Let's do this!</h2>
             <!-- Name Container -->
             <div
-              class="flex flex-col space-y-2 md:flex-row md:space-x-14 md:space-y-0"
+              class="flex flex-col space-y-2 lg:flex-row lg:space-x-14 lg:space-y-0"
             >
               <!-- First Name -->
               <div class="flex flex-col">
@@ -84,7 +90,17 @@
                   class="text-xs uppercase tracking-widest text-gray-700"
                   >First Name</label
                 >
-                <input type="text" id="first_name" class="input" />
+                <input
+                  type="text"
+                  name="first_name"
+                  id="first_name"
+                  class="input"
+                />
+                <p
+                  class="confirm-password-instructions mt-1 hidden text-xs text-red-500"
+                >
+                  Only letters
+                </p>
               </div>
               <!-- Last Name -->
               <div class="flex flex-col">
@@ -93,12 +109,22 @@
                   class="text-xs uppercase tracking-widest text-gray-700"
                   >Last Name</label
                 >
-                <input type="text" id="last_name" class="input" />
+                <input
+                  type="text"
+                  name="last_name"
+                  id="last_name"
+                  class="input"
+                />
+                <p
+                  class="confirm-password-instructions mt-1 hidden text-xs text-red-500"
+                >
+                  Only letters
+                </p>
               </div>
             </div>
             <!-- Email Phone Container -->
             <div
-              class="flex flex-col space-y-2 md:flex-row md:space-x-14 md:space-y-0"
+              class="flex flex-col space-y-2 lg:flex-row lg:space-x-14 lg:space-y-0"
             >
               <!-- Email -->
               <div class="flex flex-col">
@@ -107,7 +133,18 @@
                   class="text-xs uppercase tracking-widest text-gray-700"
                   >Email</label
                 >
-                <input type="email" id="email" class="input" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="input placeholder:text-xs"
+                  placeholder="example@mail.com"
+                />
+                <p
+                  class="confirm-password-instructions mt-1 hidden text-xs text-red-500"
+                >
+                  Enter a valid email address
+                </p>
               </div>
               <!-- Phone Name -->
               <div class="flex flex-col">
@@ -116,12 +153,22 @@
                   class="text-xs uppercase tracking-widest text-gray-700"
                   >Phone Number</label
                 >
-                <input type="text" id="phone_number" class="input" />
+                <input
+                  type="text"
+                  name="phone_number"
+                  id="phone_number"
+                  class="input"
+                />
+                <p
+                  class="confirm-password-instructions mt-1 hidden text-xs text-red-500"
+                >
+                  Enter a valid 11-digit phone number (US)
+                </p>
               </div>
             </div>
             <!-- Password Container -->
             <div
-              class="flex flex-col space-y-2 md:flex-row md:space-x-14 md:space-y-0"
+              class="flex flex-col space-y-2 lg:flex-row lg:space-x-14 lg:space-y-0"
             >
               <!-- Password -->
               <div class="flex flex-col">
@@ -130,7 +177,30 @@
                   class="text-xs uppercase tracking-widest text-gray-700"
                   >Password</label
                 >
-                <input type="password" id="password" class="input" />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  class="input"
+                />
+                <div
+                  class="password-instructions mt-1 hidden pl-4 text-xs text-red-500"
+                >
+                  <ul class="list-disc">
+                    <li class="constraint" data-constraint="first-constraint">
+                      At least 12 characters
+                    </li>
+                    <li class="constraint" data-constraint="second-constraint">
+                      Uppercase and lowercase letters
+                    </li>
+                    <li class="constraint" data-constraint="third-constraint">
+                      At least one number
+                    </li>
+                    <li class="constraint" data-constraint="forth-constraint">
+                      At least one special character
+                    </li>
+                  </ul>
+                </div>
               </div>
               <!-- Confirm Password -->
               <div class="flex flex-col">
@@ -139,18 +209,28 @@
                   class="text-xs uppercase tracking-widest text-gray-700"
                   >Confirm Password</label
                 >
-                <input type="password" id="confirm_password" class="input" />
+                <input
+                  type="password"
+                  name="confirm_password"
+                  id="confirm_password"
+                  class="input"
+                />
+                <p
+                  class="confirm-password-instructions mt-1 hidden text-xs text-red-500"
+                >
+                  Passwords must match
+                </p>
               </div>
             </div>
           </form>
           <!-- Bottom Container -->
-          <div class="mt-6 flex flex-col space-y-2 md:ml-6">
+          <div class="mt-6 flex flex-col space-y-2 lg:ml-6">
             <a
               href="#"
-              class="mx-auto w-fit rounded-md border-2 border-rose-300 bg-rose-300 px-10 py-2 text-white shadow-md duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-rose-300 md:mx-0"
+              class="create-acc-btn mx-auto w-fit rounded-md border-2 border-rose-300 bg-rose-300 px-10 py-2 text-white shadow-md duration-300 hover:-translate-y-0.5 hover:bg-white hover:text-rose-300 lg:mx-0"
               >Create Account</a
             >
-            <p class="text-center md:text-left">
+            <p class="text-center lg:text-left">
               Already have an account?
               <a href="#" class="text-rose-300 duration-200 hover:opacity-50"
                 >Log In</a
@@ -160,12 +240,15 @@
         </div>
       </div>
       <footer
-        class="absolute bottom-0 flex h-12 w-full items-center justify-center space-x-2 bg-gray-800 py-2 text-white"
+        class="font-JetBrainsMono absolute bottom-0 flex w-full items-center justify-center space-x-2 bg-slate-900 py-1 text-white lg:py-2"
       >
-        <p class="text-sm md:text-lg">Copyright &#169; 2023 henriquecfaguiar</p>
+        <p class="text-sm lg:text-lg">
+          Made with
+          <span class="text-xl text-red-600">&#9829;</span> by henriquecfaguiar
+        </p>
         <a
           href="https://github.com/henriquecfaguiar"
-          class="text-2xl duration-200 hover:opacity-50 md:text-3xl"
+          class="text-2xl duration-200 hover:opacity-50 lg:text-3xl"
           ><i class="fa fa-github"></i
         ></a>
       </footer>

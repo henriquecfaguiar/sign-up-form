@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .input {
-  @apply rounded-md border-2 p-1 focus-visible:border-2 focus-visible:border-rose-200 focus-visible:outline-none;
+  @apply w-72 rounded-md border-2 p-1 focus-visible:outline-none;
 }
 
 .bg-image {
@@ -13,7 +13,7 @@
   background-size: cover;
 }
 
-@media (screen(md)) {
+@media (screen(lg)) {
   .bg-image {
     background-image: none;
   }
@@ -24,4 +24,20 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.valid {
+  @apply border-green-300;
+}
+
+.invalid {
+  @apply border-red-300;
+}
+
+.valid-constraint {
+  @apply text-green-500;
+}
+
+.invalid-constraint {
+  @apply text-red-500;
 }
